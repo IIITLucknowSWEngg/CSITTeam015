@@ -1,132 +1,94 @@
-# **User Requirements Document (URD) - Instagram Clone**
-### **InstaPro: A Modern Social Media Experience**  
-**Version**: 1.0 | **Date**: November 2024  
+# **Project Scope**
 
----
+## **Included Features**
 
-## **1. Introduction**
+### **User Registration and Authentication**
+- User sign-up and login via email or phone number.
+- Social login options (Google, Facebook).
+- Password reset functionality.
+- User profile management with financial preferences and personal details.
 
-### **1.1 Purpose**
-The purpose of this document is to define the functional and non-functional requirements for developing an Instagram-like platform. InstaPro will focus on creating a seamless and engaging user experience, combining advanced photo/video sharing, real-time interactions, and social connectivity.  
+### **Money Transfers**
+- Send and receive money using UPI (Unified Payments Interface).
+- Support for peer-to-peer (P2P) and peer-to-merchant (P2M) payments.
+- Transfer money using bank account numbers, UPI IDs, or phone numbers.
+- Transaction history and detailed breakdown of each payment.
+- Schedule future payments and recurring transfers.
+- Ability to request money from others using UPI.
 
----
+### **Bill Payments**
+- Pay utility bills (electricity, water, gas, etc.) directly from the app.
+- Support for mobile/DTH recharges, broadband, and other recurring services.
+- Set up automatic bill payments with reminders and notifications.
+- View bill payment history and upcoming due dates.
+- Support for loan repayments, insurance premiums, and other financial obligations.
 
-## **2. Scope**
+### **Bank Account Integration**
+- Link multiple bank accounts to the app.
+- View bank account balances and recent transactions.
+- Set a default account for payments and transfers.
+- Secure linking of bank accounts using APIs.
+- Seamless account switching during transactions.
 
-### **2.1 Core Features**
-#### **User Registration and Authentication**
-- **Sign-Up/Login**: Users can register using email, phone numbers, or social logins (Google, Facebook).  
-- **Password Recovery**: Support for password resets through email or OTP.  
-- **Two-Factor Authentication (2FA)**: Enhanced security for login and account recovery.  
+### **QR Code Payments**
+- Scan QR codes to make payments at shops and other physical locations.
+- Support for generating personal QR codes to receive payments.
+- Store merchant QR codes for frequent payments.
+- Real-time transaction confirmation and notifications.
 
-#### **User Profile Management**
-- **Customizable Profiles**: Profile picture, bio, personal details, and public/private toggle.  
-- **Follow/Unfollow System**: Users can follow accounts for content updates.  
+### **Wallet and Card Integration**
+- Option to store and use a wallet balance for transactions.
+- Link and manage credit and debit cards within the app.
+- Set default payment methods for UPI, wallet, or card transactions.
+- Secure storage of card information for faster future payments.
+- Transaction limit management and tracking.
 
-#### **Content Sharing**
-- **Photo and Video Uploads**: Support for high-resolution photos, videos, and carousel posts.  
-- **Editing Tools**: Filters, cropping, captions, and tagging options.  
-- **Stories**: Temporary 24-hour posts with stickers, GIFs, and polls.  
+### **Payment Gateway Integration**
+- Support for secure payment gateway transactions with multiple options (UPI, credit/debit cards, net banking, wallets).
+- View detailed price breakdowns with applicable fees and taxes.
+- Support for multi-currency payments where applicable.
+- EMI and pay-later options for selected transactions.
 
-#### **Explore and Discovery**
-- **Explore Feed**: Curated posts based on user interests and engagement history.  
-- **Hashtag and Location Search**: Discover content using hashtags and geotags.  
-- **Recommendations**: AI-driven suggestions for accounts to follow.  
+### **Transaction Management**
+- View and manage all past and upcoming transactions.
+- Option to cancel, modify, or dispute transactions within the app.
+- Refund management for canceled transactions.
+- Email and SMS confirmations for successful transactions.
+- Track pending transactions or disputes in real-time.
 
-#### **Direct Messaging**
-- **Real-Time Messaging**: Text, images, voice notes, and GIFs.  
-- **Video and Voice Calls**: One-to-one and group calls.  
-- **Message Requests**: Filter for messages from unknown users.  
+### **Security Features**
+- Two-factor authentication (2FA) for added security during login and transactions.
+- Automated fraud detection and alerting for suspicious activities.
+- Secure encryption of sensitive user data and transaction details.
+- PIN-based authorization for payments and transfers.
+- Ability to temporarily block a linked bank account or card in case of suspicious activity.
 
-#### **Notifications**
-- **Push Notifications**: Alerts for likes, comments, mentions, and direct messages.  
-- **Activity Feed**: View historical interactions (e.g., new followers, tagged posts).  
+### **Notifications**
+- Push notifications for transaction confirmations, promotional offers, and bill reminders.
+- Alerts for security-related issues such as suspicious login attempts or failed transactions.
+- Personalized notifications for cashback offers, discounts, and rewards.
 
-#### **Engagement Features**
-- **Likes and Comments**: Enable interaction on posts.  
-- **Reactions for Stories**: Quick responses such as emojis or stickers.  
-- **Save Posts**: Bookmark favorite content for later.  
+### **Customer Support**
+- In-app chat support for real-time assistance.
+- Dedicated FAQ section for self-service.
+- Access to customer support via email, phone, or chatbot.
+- Manage and track support tickets for payment or account-related issues.
 
-#### **Reels and Short Videos**
-- **Reels**: Share short-form videos with music, effects, and text overlays.  
-- **Music Integration**: Add trending music or custom audio to videos.  
+### **User Reviews and Ratings**
+- Users can rate merchants after completing payments.
+- Provide feedback on user experience and transaction flow.
+- View aggregated ratings and feedback from other users on merchants.
 
-#### **Monetization Tools**
-- **Creator Tools**: Enable monetization for eligible accounts.  
-- **Sponsored Content**: Tag sponsored posts with disclosure options.  
-- **Shop Integration**: Sell products directly through the platform.  
+### **Loyalty and Rewards Program**
+- Users earn reward points or cashback for every transaction.
+- Points can be redeemed for future payments or exclusive offers.
+- View rewards status and transaction history.
+- Special rewards and bonuses for frequent users or high-volume transactions.
 
-#### **Admin Panel**
-- Manage user accounts, reported content, and platform-wide analytics.  
-- Monitor and moderate comments, posts, and story violations.  
-- Set policies for monetization and advertising approval.  
+### **Admin Panel**
+- Manage users, bank accounts, and transactions.
+- Approve or remove user comments and feedback.
+- View analytics on transaction volumes, user activity, and security alerts.
+- Monitor customer support tickets and resolution status.
+- Set system-level settings such as transaction limits and verification processes.
 
----
-
-## **3. User Personas**
-
-### **3.1 Primary Users**
-#### **3.1.1 Content Creators**
-- **Goals**:  
-  - Share engaging content to grow their audience.  
-  - Monetize their work through platform tools.  
-  - Analyze audience engagement and performance metrics.  
-- **Pain Points**:  
-  - Limited discoverability without promotions.  
-  - Difficulty managing interactions with large audiences.  
-
-#### **3.1.2 Everyday Users**
-- **Goals**:  
-  - Stay connected with friends and family.  
-  - Discover new interests and communities.  
-  - Share personal moments.  
-- **Pain Points**:  
-  - Irrelevant content suggestions.  
-  - Privacy concerns for personal posts.  
-
-### **3.2 Secondary Users**
-#### **3.2.1 Businesses**
-- **Goals**:  
-  - Advertise products and reach target audiences.  
-  - Track engagement and sales conversions.  
-  - Provide customer support through messaging.  
-- **Pain Points**:  
-  - High competition for visibility.  
-  - Ad performance is inconsistent without optimization.  
-
----
-
-## **4. System Requirements**
-
-### **4.1 Functional Requirements**
-#### **User Features**
-- Enable registration, login, and profile management.  
-- Allow photo/video uploads, editing, and sharing.  
-- Real-time messaging and notifications.  
-- Support discovery through hashtags, location, and recommendations.  
-
-#### **Admin Features**
-- Moderate reported content and user violations.  
-- Manage platform-wide analytics and policies.  
-
-### **4.2 Non-Functional Requirements**
-- **Performance**: Handle up to 100,000 concurrent users during peak times.  
-- **Scalability**: Cloud infrastructure to expand during high user activity.  
-- **Security**: Enforce encryption for user data and secure transactions.  
-- **Cross-Platform Compatibility**: Ensure the app works seamlessly across iOS, Android, and web browsers.  
-
----
-
-## **5. Future Enhancements**
-- **Augmented Reality (AR) Filters**: Develop advanced AR features for stories and reels.  
-- **AI-Driven Content Moderation**: Automate the detection of inappropriate content.  
-- **Live Shopping**: Enable users to shop products during live streams.  
-- **Advanced Analytics**: Provide creators and businesses with deeper audience insights.  
-
----
-
-## **Document Control**
-| **Version** | **Date**      | **Author**       | **Changes**       |
-|-------------|---------------|------------------|-------------------|
-| 1.0         | November 2024 | InstaPro Team    | Initial Release   |
-| TBD         | TBD           | -                | Planned Updates   |
