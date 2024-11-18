@@ -18,37 +18,37 @@
     <th>Name</th>
     <th>Enrolment No.</th>
     <th>Email</th>
-    <th>GitHub</th>
+
   </tr>
   <tr>
    <td>Banavath Murali</td>
     <td>Lit2023039</td>
     <td><a href="mailto:lit2023039@iiitl.ac.in">lit2023039@iiitl.ac.in</a></td>
-    <td><a href="https://github.com/Lakshya0000"><img src="https://img.shields.io/badge/GitHub-Profile-blue?style=flat&logo=github"></a></td>
+   
   </tr>
   <tr>
     <td>N Akshith Reddy</td>
     <td>Lit2023012</td>
     <td><a href="mailto:akshith8978@gmail.com">akshith8978@gmail.com</a></td>
-    <td><a href="https://github.com/TanishMoral11"><img src="https://img.shields.io/badge/GitHub-Profile-blue?style=flat&logo=github"></a></td>
+   
   </tr>
   <tr>
     <td>Karamtot Pavan</td>
     <td>Lcs2023055</td>
     <td><a href="mailto:karamtotpavan@gmail.com">karamtotpavan@gmail.com</a></td>
-    <td><a href="https://github.com/PIYUSH-NAYAK"><img src="https://img.shields.io/badge/GitHub-Profile-blue?style=flat&logo=github"></a></td>
+   
   </tr>
   <tr>
     <td>Mudavath Tharun</td>
     <td>Lcs2023057</td>
     <td><a href="mailto:tharubmudavath91824@gmail.com">tharubmudavath91824@gmail.com</a></td>
-    <td><a href="https://github.com/HeyAmrit"><img src="https://img.shields.io/badge/GitHub-Profile-blue?style=flat&logo=github"></a></td>
+   
   </tr>
   <tr>
     <td>Radhika Kalanee</td>
     <td>Lit2023017</td>
     <td><a href="mailto:kalaneeradhika@gmail.com">kalaneeradhika@gmail.com</a></td>
-    <td><a href="https://github.com/lavishshakya"><img src="https://img.shields.io/badge/GitHub-Profile-blue?style=flat&logo=github"></a></td>
+   
   </tr>
  
 </table>
