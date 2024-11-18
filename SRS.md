@@ -1,158 +1,153 @@
-# **Software Requirements Specification (SRS)**
+# Software Requirements Specification (SRS) for Blinkit App
 
-# Software Requirements Specification (SRS) Document for Blinkit Clone
+## Table of Contents
+1. *Introduction*
+2. *Overall Description*
+3. *Functional Requirements*
+4. *Non-Functional Requirements*
+5. *Use Case Descriptions*
 
 ---
 
 ## 1. Introduction
-
-### 1.1 Purpose
-This document outlines the requirements for the Blinkit clone application, a platform for on-demand delivery of groceries and essential goods. It details functional and non-functional requirements and serves as a guide for all stakeholders throughout the software development lifecycle.
-
-### 1.2 Scope
-The Blinkit clone application is designed to provide a seamless platform for users to browse, order, and receive groceries and essentials. It includes features such as real-time inventory updates, location-based delivery, and secure payment options. The system supports user registration, order tracking, and admin functionalities for vendor and inventory management.
-
-### 1.3 Definitions, Acronyms, and Abbreviations
-- **SRS**: Software Requirements Specification  
-- **UI**: User Interface  
-- **API**: Application Programming Interface  
-- **OTP**: One-Time Password  
-- **SKU**: Stock Keeping Unit  
-
-### 1.4 References
-- IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications  
-- Agile Manifesto Principles  
-- User Requirements Document  
-
-### 1.5 Overview
-This document is organized into sections detailing the system's overall description, features, external interfaces, and non-functional requirements. It includes use case diagrams, abuse case diagrams, and error case diagrams.
+The Blinkit app is designed to provide users with a seamless platform for ordering groceries, essentials, and other goods for fast delivery. This document outlines the software requirements and detailed use cases for the Blinkit application.
 
 ---
 
 ## 2. Overall Description
 
-### 2.1 Product Perspective
-The Blinkit clone is a location-based delivery application that integrates with third-party APIs for payment processing and real-time delivery tracking. It uses a modular architecture to ensure scalability.
+### 2.1 Purpose
+The purpose of this document is to specify the requirements for developing a user-friendly, scalable, and secure Blinkit app.
 
-### 2.2 Product Functions
-- User registration and login via OTP.
-- Browsing products by category and search.
-- Adding items to a cart and checkout.
-- Payment via multiple methods (UPI, cards, net banking).
-- Real-time order tracking.
-- Vendor inventory management.
-- Admin panel for order and user management.
+### 2.2 Scope
+The Blinkit app allows users to:
+- Order groceries and essentials online.
+- Track real-time delivery status.
+- Manage multiple payment options.
+- Provide reviews and feedback.
 
-### 2.3 User Classes and Characteristics
-- **Customers**: End-users placing orders for delivery.  
-- **Vendors**: Businesses managing product inventory and pricing.  
-- **Delivery Personnel**: Individuals responsible for order deliveries.  
-- **Admins**: System administrators overseeing platform operations.  
-
-### 2.4 Operating Environment
-The application will operate on Android and iOS platforms and require stable internet connectivity. The backend will use cloud infrastructure for high availability.
-
-### 2.5 Design and Implementation Constraints
-- Compliance with local data protection laws (e.g., GDPR).  
-- Dependencies on third-party APIs for payments and mapping.  
-
-### 2.6 Assumptions and Dependencies
-- Users have access to smartphones with active internet connections.  
-- Vendors regularly update inventory to reflect real-time availability.  
+### 2.3 Assumptions and Dependencies
+- Users must have internet access to use the app.
+- The app depends on integration with third-party APIs for payments and delivery tracking.
+- Inventory availability is managed by retail partners.
 
 ---
 
-## 3. System Features
+## 3. Functional Requirements
 
-### 3.1 User Registration and Login
-**Description:** Users can register and log in using their phone numbers and an OTP system.  
+### 3.1 User Management
+- Register and log in using email/phone or social accounts.
+- Manage user profiles, addresses, and payment preferences.
 
-**Functional Requirements:**  
-- The system shall allow user registration with a valid phone number.  
-- The system shall send an OTP for account verification.  
-
----
-
-### 3.2 Product Browsing and Search
-**Description:** Users can search for products or browse through categories.  
-
-**Functional Requirements:**  
-- The system shall allow keyword-based product search.  
-- The system shall display product details, including price and availability.  
-
----
+### 3.2 Product Management
+- Browse and search for products by category or keyword.
+- View product details, pricing, and availability.
 
 ### 3.3 Cart and Checkout
-**Description:** Users can add items to a cart and proceed to checkout.  
+- Add or remove products from the cart.
+- Apply discounts, promo codes, and offers.
+- Select delivery address and payment method.
 
-**Functional Requirements:**  
-- The system shall allow users to view, update, and delete cart items.  
-- The system shall calculate the total price, including applicable taxes.  
+### 3.4 Order Tracking
+- Real-time updates on order status.
+- View estimated delivery time.
 
----
+### 3.5 Payments
+- Support for UPI, credit/debit cards, and wallet payments.
+- Secure payment processing.
 
-### 3.4 Payment Processing
-**Description:** Users can pay using UPI, cards, or wallets.  
-
-**Functional Requirements:**  
-- The system shall support multiple payment methods.  
-- The system shall provide transaction success/failure notifications.  
-
----
-
-### 3.5 Real-Time Order Tracking
-**Description:** Users can track their orders from placement to delivery.  
-
-**Functional Requirements:**  
-- The system shall provide real-time updates on delivery status.  
-- The system shall notify users when their order is out for delivery.  
+### 3.6 Reviews and Ratings
+- Allow users to rate and review delivered products.
+- View aggregated ratings and feedback on products.
 
 ---
 
-### 3.6 Inventory Management
-**Description:** Vendors can manage product listings and stock.  
+## 4. Non-Functional Requirements
 
-**Functional Requirements:**  
-- The system shall allow vendors to update product prices and quantities.  
-- The system shall notify vendors of low stock levels.  
+### 4.1 Performance
+- The app should handle 10,000 concurrent users without significant downtime.
 
----
+### 4.2 Security
+- Implement two-factor authentication for login.
+- Encrypt sensitive user data and payment information.
 
-## 4. External Interface Requirements
+### 4.3 Usability
+- Provide an intuitive and accessible user interface.
 
-### 4.1 User Interfaces
-- **Mobile Application:** An intuitive UI for customers and delivery personnel.  
-- **Admin Panel:** A web-based interface for system administration.  
-
-### 4.2 Hardware Interfaces
-- **Mobile Devices:** For app functionality and GPS-based tracking.  
-
-### 4.3 Software Interfaces
-- **Payment Gateways:** Integration for secure payment processing.  
-- **Mapping APIs:** For route optimization and delivery tracking.  
+### 4.4 Availability
+- Ensure 99.9% uptime with proper server monitoring and scaling.
 
 ---
 
-## 5. Non-Functional Requirements
+## 5. Use Case Descriptions
 
-### 5.1 Performance
-- The application shall handle 10,000 concurrent users with minimal latency.  
+### 5.1 Use Case 1: User Registration and Login
+*Actors:* User, System  
+*Description:* A new user registers using email/phone or logs in with existing credentials.  
 
-### 5.2 Security
-- User data shall be encrypted in transit and at rest.  
+*Steps:*
+1. User enters email/phone and password or selects a social login option.
+2. System verifies credentials.
+3. User gains access to their account.
 
-### 5.3 Availability
-- The system shall maintain 99.9% uptime with disaster recovery in place.  
-
-### 5.4 Scalability
-- The system shall scale to support additional vendors and delivery personnel.  
+*Precondition:* User must have a valid email/phone or social media account.  
+*Postcondition:* User account is created or accessed.  
 
 ---
 
-## 6. Appendices
+### 5.2 Use Case 2: Search for Products
+*Actors:* User, System  
+*Description:* A user searches for products by keyword or category.  
 
-- **Appendix A:** Glossary of Terms  
-- **Appendix B:** System Diagrams (Use Case, Abuse Case, Error Case)  
-- **Appendix C:** Detailed Requirements Matrix  
+*Steps:*
+1. User enters a keyword or selects a category.
+2. System displays matching products.
+3. User selects a product to view its details.
+
+*Precondition:* Products are listed in the system.  
+*Postcondition:* User views the desired product.  
+
+---
+
+### 5.3 Use Case 3: Place an Order
+*Actors:* User, System, Delivery Partner  
+*Description:* A user selects items, adds them to the cart, and completes the order.  
+
+*Steps:*
+1. User adds items to the cart.
+2. User proceeds to checkout and selects payment and delivery options.
+3. System processes the payment and confirms the order.
+4. Delivery partner picks up and delivers the order.
+
+*Precondition:* Selected items are in stock.  
+*Postcondition:* Order is placed and tracked for delivery.  
+
+---
+
+### 5.4 Use Case 4: Track an Order
+*Actors:* User, System, Delivery Partner  
+*Description:* A user tracks the status of their order in real-time.  
+
+*Steps:*
+1. User navigates to the "My Orders" section.
+2. System displays the current status and estimated delivery time.
+3. Delivery partner updates the status as they progress.
+
+*Precondition:* Order is successfully placed.  
+*Postcondition:* User receives updates until the order is delivered.  
+
+---
+
+### 5.5 Use Case 5: Provide Product Feedback
+*Actors:* User, System  
+*Description:* A user provides feedback on delivered products.  
+
+*Steps:*
+1. User navigates to the "Order History" section.
+2. User selects an order to rate and review.
+3. System stores the feedback and updates the product’s rating.
+
+*Precondition:* Order is marked as delivered.  
+*Postcondition:* Feedback is stored and displayed for future reference.  
 
 ---
