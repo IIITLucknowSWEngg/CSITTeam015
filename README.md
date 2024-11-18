@@ -2,6 +2,8 @@
 
 TEAM NAME : QUANTUM FLUX
 
+Project Name : Blinkit
+
 Banavath Murali , lit2023039 ,banavathmuralinayak@gmail.com , BanavathMurali
 
 Akshith Reddy , lit2023012 , akshith8978@gmail.com , Akshith8978
