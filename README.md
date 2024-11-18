@@ -2,8 +2,8 @@
 
 <div align="center">
 
-![Team Banner](https://img.shields.io/badge/Team-Development_Team-blue)
-![Project](https://img.shields.io/badge/Project-Blinkit_Clone-yellow)
+![Team Banner](https://img.shields.io/badge/Team-Quantum_Flux-blue)
+![Project](https://img.shields.io/badge/Project-Blinkit-yellow)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![Status](https://img.shields.io/badge/Status-In_Development-yellow)]()
 
