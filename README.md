@@ -67,7 +67,7 @@ The **Blinkit Clone** is an on-demand delivery platform designed to provide seam
 
 ## 🔗 Project Approval
 
-- **Repository**: [GitHub Repository - Development Team](https://github.com/YourRepoLink)
+- **Repository**: [GitHub Repository - Team Quantum Flux](https://github.com/YourRepoLink)
 
 ---
 
@@ -94,7 +94,6 @@ Each team member has made significant contributions to the repository. You can v
 ---
 
 ## 📑 Files in Repository
-
 - **LICENSE**: MIT License information.
 - **README.md**: Project overview and team introduction.
 - **project.md**: Detailed project objectives.
