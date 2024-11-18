@@ -111,5 +111,5 @@ This project is licensed under the MIT License. See [LICENSE](https://github.com
 ---
 
 <div align="center">
-Made with 💙 by the Development Team
+Made with 💙 by the team Quantum Flux
 </div>
