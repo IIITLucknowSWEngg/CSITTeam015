@@ -39,9 +39,9 @@
    
   </tr>
   <tr>
-    <td>Mudavath Tharun</td>
+    <td>M Tharun</td>
     <td>Lcs2023057</td>
-    <td><a href="mailto:tharubmudavath91824@gmail.com">tharubmudavath91824@gmail.com</a></td>
+    <td><a href="mailto:tharunmudavath91824@gmail.com">tharubmudavath91824@gmail.com</a></td>
    
   </tr>
   <tr>
